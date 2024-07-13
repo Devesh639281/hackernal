@@ -1,0 +1,48 @@
+/* ++++++++++++++++Register Page+++++++++++++ */
+
+.form-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    background-color: azure;
+    background-image: linear-gradient(0deg,rgb(136, 171, 225) 20%,rgb(225, 152, 196) 60%);
+}
+.form-container form{
+    box-shadow: rgba(18, 18, 18, 0.35) 0px 5px 15px;
+    padding: 70px;
+    background-color: aliceblue;
+}
+.form-container form title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: "Playfair Display",serif;
+}
+
+.form-container form input{
+    border: none;
+    padding: 10px;
+    width: 20vw;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+.form-container form button{
+    border: 1px solid black;
+    border-radius: 0;
+    background-color: #000;
+    color: white;
+    width: 20vw;
+}
+
+.form-container form button:hover {
+    border: 1px solid black;
+    background-color: #e678ec;
+    background: -webkit-linear-gradient(to right,rgb(195, 180, 180),rgba(117, 87, 87, 0.418));
+    color: white;
+    width: 20vw;
+}
+.form-container form h3{
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+const express = require("express");
+const app = express();
+const dotenv = require("dotenv");
+dotenv.config();
+const morgan = require("morgan");
+app.use(morgan("dev"));
+const cors = require("cors");
+app.use(cors());
+const colors = require("colors");
+const { connectDB } = require("./config/db");
+connectDB();
+const bodyParser = require("body-parser");
+app.use(bodyParser.json());
+app.use(express.json());
+const authenticationRoute = require("./view/authenticationView");
+app.use("/api/v1/authenticate", authenticationRoute);
+const productRoute = require("./view/productView");
+app.use("/api/v1/product", productRoute);
+app.listen(process.env.PORT, () => {
+  console.log(`Server is Running on port ${process.env.PORT}`.bgGreen.blue);
+});

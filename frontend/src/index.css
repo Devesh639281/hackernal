@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+.navbar {
+ 
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  margin-left: 0px;
+  width: 100vw;
+  text-transform: uppercase;
+   box-shadow: 0 8px 4px -6px gray;
+  --webkit-box-shadow: 0 8px 4px -6px gray;
+  border-bottom: 0.5px solid gray !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: 'roboto', sans-serif;
+  letter-spacing: 3px;
+}
+
+
+/* Footer Desin */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  bottom: 0;
+  width: 100vw;
+   background: black;
+  background: -webkit-linear-gradient(to right, rgb(73, 72, 72), black);
+  background: linear-gradient(to right,
+      rgb(73, 72, 72),
+      rgb(145, 83, 83)) !important;
+}
+
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: rgb(145, 180, 180);
+  border-bottom: 2px solid rgb(255, 240, 240);
+}
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+
+
